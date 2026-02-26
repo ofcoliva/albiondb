@@ -1,2 +1,2 @@
 # albiondb
-frontend albiondb
+frontend albiondb.
