@@ -5,10 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Items | Albion Database</title>
     <script src="./js/tailwind.js"></script>
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/time_zone.js"></script>
     <link rel="icon" href="icon.png" type="image/png">
 </head>
 <body class="bg-gray-100 font-sans text-gray-900">
+    <!-- Horário de cada servidor -->
+    <div class="fixed top-0 left-0 w-full bg-gray-900/50 backdrop-blur-sm border-b border-gray-800 z-50 px-4 py-1 flex justify-center gap-6">
+        <div class="flex items-center gap-2">
+            <span class="text-[14px] font-bold text-blue-400">AMER:</span>
+            <span id="clockAmericas" class="text-xm font-mono text-gray-200">00:00:00</span>
+        </div>
+        <div class="flex items-center gap-2">
+            <span class="text-[14px] font-bold text-green-400">EURO:</span>
+            <span id="clockEurope" class="text-xm font-mono text-gray-200">00:00:00</span>
+        </div>
+        <div class="flex items-center gap-2">
+            <span class="text-[14px] font-bold text-red-400">ASIA:</span>
+            <span id="clockAsia" class="text-xm font-mono text-gray-200">00:00:00</span>
+        </div>
+    </div>
 
     <div class="max-w-6xl mx-auto px-4 py-8">
         <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 mb-8">
