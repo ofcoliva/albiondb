@@ -10,14 +10,13 @@ function updateAllServerTimes() {
     };
 
     const update = () => {
-        // Americas usa o fuso de New York (EST/EDT)
         document.getElementById('clockAmericas').textContent = formatTime("America/New_York");
         
-        // Europe usa UTC (Londres é a base técnica do Albion Europe)
         document.getElementById('clockEurope').textContent = formatTime("UTC");
         
-        // Asia usa o fuso de Singapura (SGT)
         document.getElementById('clockAsia').textContent = formatTime("Asia/Singapore");
+        
+        document.getElementById('clockSouthAmerica').textContent = formatTime("America/Sao_Paulo");
     };
 
     update();
